@@ -1,0 +1,662 @@
+html {
+    min-height: 100%;
+    position: relative;
+
+}
+
+body {
+    margin: 0;
+}
+a{
+    cursor: pointer;
+}
+.contenidoBody {
+    margin: 0px auto;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    width: 1200px;
+    height: 500px;
+    display: table;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.pelicula{
+   
+   margin-top: 40px;
+   margin-left: 70px;
+   overflow: hidden; 
+   list-style: none;
+   float: left;
+   display: block;
+   border-radius: 20px;
+   width: 300px;
+   height: auto;
+   z-index: 1;
+}
+
+.imagen_pelicula{
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 300px black;
+
+    
+}
+
+ section{
+
+   
+margin-left:55px;
+
+
+}
+
+ .datoPelicula1{
+    
+     font-weight: bold;
+     font-size: 20px;
+     
+     
+ }
+
+ .datoPelicula2{
+    font-size: 20px;
+}
+
+header{
+    margin-top: -150px;
+    padding-left: 0px;
+    font-size: 0;
+    background: #90D7C9;
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    z-index:1; 
+
+
+   }
+
+
+   .titulo{
+    padding-left: 0px;
+    background: rgb(46,49,50);
+    background: linear-gradient(85deg, rgba(46,49,50,1) 0%, rgba(56,147,219,1) 69%);
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index:2; 
+    font-size: 50px;
+    color: white;
+    text-align: center;
+   }
+
+ 
+  nav{
+       margin-top: 70px;  
+       
+    }
+   nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:15px;
+    font-weight: bold;
+    }
+          
+nav li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display:inline-block;
+    width:120px;
+    height:20px;
+    padding:10px 10px;
+    background-color:#4899E1 ;
+    border:1px solid white;
+    text-align:center;
+    color:black;
+    position:relative;
+}
+
+
+          
+nav li:hover{
+    background-color:white;
+    color:#A34A4A;
+    border: 1px solid #A34A4A
+    }
+          
+nav li>ul{
+    display:none;
+    }
+
+nav li:hover>ul{
+    display:block;
+    position:absolute;
+    top:30px;
+    left:0px;
+}
+
+
+#buscar{
+    float: right;
+    margin-top: -40px;
+    margin-right: 220px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.redes{
+    margin-top: -45px;
+    margin-right: 120px;
+    float: right;
+}
+
+#facebook{
+    width: 35px;
+}
+
+#twitter{
+    width: 35px;
+    margin-left: 10px;
+}
+
+.div_nosotros{
+
+   margin-left: 250px;
+
+}
+
+.parrafo_nosotros{
+    width: 700px;
+    font-size: 20px;
+    
+}
+
+.bodyContactenos{
+    margin: 0px auto;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    width: auto;
+    height: 500px;
+    display: table;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+
+.div_formulario_documento{
+    float: right;
+    margin-left: 150px;
+    margin-top: -60px;
+}
+
+.label_formulario{
+   font-weight: bold;
+}
+
+.seleccion{
+    height: 30px;
+}
+
+.input_formulario{
+    width: 300px;
+    height: 20px;
+    font-size: 15px;
+    
+}
+
+.area{
+   width: 500px;
+   height: 100px;
+   text-align: center;
+}
+
+.boton_enviar{
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+    background: blue;
+    color: white;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+
+.formulario_iniciar{
+    margin-top: 20px;
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 20px 20px 200px solid black;
+}
+
+.boton_enviar_sesion{
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #4899E1;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 80px;
+    height: 30px;
+    background: #4899E1;
+    color: white;
+
+}
+
+.opciones_sesion{
+   
+    margin-top: 50px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background: rgb(46,49,50);
+    background: linear-gradient(85deg, rgba(46,49,50,1) 0%, rgba(56,147,219,1) 69%);
+    color: white;
+    font-size: 17px;
+   
+}
+.label_sesion{
+  font-weight: bold;
+
+}
+
+.label_registrate {
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.div_genero{
+    float: right;
+   margin-right: 200px;
+    margin-top: -60px;
+}
+
+.div_fecha{
+    display: flex;
+}
+
+.fecha1{
+    font-size: 17px;
+}
+
+.fecha2 {
+    margin-left: 30px;
+    font-size: 17px;
+    
+}
+
+.fecha3{
+    margin-left: 30px;
+    font-size: 17px;
+}
+
+.terminos{
+    color: blue;
+}
+
+
+.bodyAdministrador{
+    margin: 0px auto;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    width: auto;
+    height: auto;
+    margin-left: 150px;
+    justify-content: center;
+    margin-bottom: 120px;
+
+}
+.h2_Administrador{
+    text-align: center;
+    font-weight: bold;
+}
+.formularioAdminstrador{
+    margin-left: 50px;
+    border: 1px solid black;
+    overflow: hidden;
+    display: table;
+    height: 700px;
+    background: rgb(125,134,136);
+    background: linear-gradient(85deg, rgba(125,134,136,1) 0%, rgba(91,96,242,1) 21%);
+    
+}
+
+.div_img{
+    margin-right: 330px;
+}
+
+.formularioComprar{
+    padding: 40px;
+}
+.div_datos{
+    margin-top: -300px;
+    width: 300px;
+    height: auto;
+    margin-left: 300px;
+    margin-bottom: auto;
+}
+
+.div_datosAdministrador{
+    margin-top: -350px;
+    width: 300px;
+    height: auto;
+    margin-left: 300px;
+    margin-bottom: auto;
+}
+#imagenPrevisualizacion{
+    width: 250px;
+    height: 300px;
+    border: 1px solid white;
+    background: white;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 10px;
+
+}
+
+#seleccionArchivos{
+    margin-top: 10px;
+   
+}
+
+.tiquetes{
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    margin-left: 650px;
+    margin-top: -400px;
+    background: #90D7C9;
+    padding: 5px;
+    
+}
+
+.tiquetesAdministrador{
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    margin-left: 650px;
+    margin-top: -500px;
+    background: #90D7C9;
+    padding: 5px;
+    
+}
+
+.area2{
+    width: 300px;
+    font-size: 15px;
+}
+
+.input_buscar{
+    width: 200px;
+    height: 20px;
+    margin-left: 50px;
+}
+
+.formularioComprar{
+    margin-top: -50px;
+    margin-left: 50px;
+    overflow: hidden;
+    display: table;
+    height: 400px;
+  
+}
+
+#imagenPrevisualizacionComprar{
+    width: 250px;
+    height: 300px;
+    border: 5px solid gray;
+    background: white;
+    display: flex;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.comprar_pelicula{
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left: 650px;
+    margin-top: -300px;
+    background: rgb(194,208,232);
+    background: linear-gradient(85deg, rgba(194,208,232,1) 0%, rgba(215,211,197,1) 100%);
+    padding: 5px;
+    
+}
+.label_precio{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.input_precio{
+    font-size: 20px;
+}
+
+.boton_comprar{
+    background: #1679cf;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 50px;
+    cursor: pointer;
+
+}
+
+
+
+.div_estrellas_blanca{
+    margin-top: 20px;
+    margin-left: 50px;
+    
+   
+}
+
+
+.div_estrellas_blanca_pelicula{
+    margin-top: -30px;
+    margin-left: 100px;
+}
+
+.area3{
+    width: 400px;
+    height: 150px;
+    font-size: 15px;
+}
+
+.tabla{
+    border: 1px solid gray;
+    margin-top: 10px;
+    font-size: 20px;
+    width: 100%;
+}
+
+th{
+    background-color: rgb(148, 245, 224);
+}
+
+th, td {
+    width: 25%;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-spacing: 0;
+ }
+
+ #texto{
+
+    font-size: 20px;
+    
+
+ }
+
+ #consultar{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background: #2676bb;
+    padding: 0px;
+    cursor: pointer;
+ }
+
+ .boton{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    background: #2676bb;
+    padding: 0px;
+    border: none;
+ }
+
+
+ .panel{
+    width: 800px;
+    overflow: hidden;
+    margin: auto;
+    
+   
+ }
+
+
+
+ .panel_gestionar{
+    width: 230px;
+    height: 230px;
+    font-size: 30px;
+    display: flex;
+    margin-left: 30px;
+    border: 1px solid black;
+    float: left;
+    border-radius: 50%;;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+ }
+
+ #g1{
+    background: rgb(5,143,252);
+    background: linear-gradient(85deg, rgba(5,143,252,1) 0%, rgba(233,215,156,1) 78%);
+ }
+
+ #g2{
+    background: rgb(63,209,166);
+    background: linear-gradient(85deg, rgba(63,209,166,1) 0%, rgba(168,149,83,1) 100%);
+
+ }
+
+ #g3{
+    background: rgb(232,216,194);
+    background: linear-gradient(85deg, rgba(232,216,194,1) 0%, rgba(181,141,0,1) 100%);
+
+ }
+
+ #g4{
+    background: rgb(194,208,232);
+    background: linear-gradient(85deg, rgba(194,208,232,1) 0%, rgba(189,182,160,1) 100%);
+    margin-top: 20px;
+    margin-left: 150px;
+
+ }
+
+ #g5{
+    background: rgb(165,108,179);
+    background: linear-gradient(85deg, rgba(165,108,179,1) 0%, rgba(189,182,160,1) 87%);
+    margin-top: 20px;
+
+ }
+
+
+ .flashes{
+    width: 100%;
+    background: rgb(201, 135, 135);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+ }
+
+ .flashes2{
+    width: 450px;
+    height: 30px;
+    background: rgb(150, 103, 1);
+    font-size: 19px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+ }
+
+ .div_pelicula{
+    margin-top: -330px;
+    width: 300px;
+    height: auto;
+    margin-left: 300px;
+    margin-bottom: auto;
+ 
+}
+
+
+ .input_pelicula{
+    
+    text-transform: uppercase;
+   
+ }
+
+
+ .redes-sesion{
+    float: right;
+    margin-right: 250px;
+    margin-top: -40px;
+    text-align: center;
+    width: 200px;
+ }
+
+ .sesion{
+    float: right;
+    margin-top: -50px;
+    text-align: center;
+    width: 200px;
+ }
+
+
+footer {
+    background-color: #90D7C9;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    color: black;
+    font-weight: bold;
+}
+
+.imagen_contactos{
+    width: 250px;
+    float: right;
+    margin-top: -60px;
+    margin-right: 50px;
+}
+.contenido_piePagina {
+    text-align: center;
+}
+
+

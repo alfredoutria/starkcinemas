@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/estilos.css"></link>
+    <title>Adminstrador</title>
+</head>
+<body>
+
+    <header>
+        <div class="titulo">Super Administrador y Administrador</div>
+        <nav id="barra_menu">
+            <ul>
+                <li><a href="/">INICIO</a></li>
+                <li><a href="/consultar">CARTELERA</a></li>
+                <li><a href="/nosotros">NOSOTROS</a></li>
+                <li><a href="/contactos">CONTÁCTENOS</a></li>
+                <li><a href="/sesion">INICIA SESIÓN</a></li>
+                <li><a href="/registrar">REGISTRATE</a></li>
+                <li><a href="/panel_admin">ADMIN</a></li>
+            </ul>
+         </nav>
+         <div class="redes">
+            <a href="https://www.facebook.com/" target="_blank" ><img id="facebook" src="../static/img/facebook.png"></a>
+             <a href="https://twitter.com/" target="_blank"> <img id="twitter" src="../static/img/twitter.png"></a>
+          </div>
+     
+    </header>
+   
+    
+    <div class="bodyAdministrador">
+        
+    
+            
+   
+    
+        {%- for pelicula in peliculas %}
+       <form class="formularioAdminstrador" method="post"  enctype="multipart/form-data">
+        <h2 class="h2_Administrador">ADMINISTRADOR</h2>
+        
+        <div class="div_img"><img id="imagenPrevisualizacion" src="../static/imagenes/{{ pelicula.nombre_imagen}}">
+            <input class="archivo" id="seleccionArchivos" type="file"   name="seleccionArchivos" accept="image/*">
+        </div><br>
+        <div class="div_datosAdministrador">
+        <label class="label_formulario">TITULO</label><br>
+        <input class="input_formulario" name="titulo" value="{{ pelicula.titulo}}" onkeypress="return soloLetras(event)" required>
+        <br><br>
+
+        <label class="label_formulario">DESCRIPCIÓN</label><br>
+        <textarea class="area2" name="descripcion" required>{{ pelicula.descripcion}}</textarea><br>
+
+        <label class="label_formulario">FECHA DE ESTRENO</label><br>
+        <div class="div_fecha">
+        <select class="fecha1" name="fecha1">
+        <option>{{ pelicula.f1}}</option>
+        <option value="2022">2022</option>
+        <option value="2022">2023</option>
+
+        </select><br><br>
+       
+        <select class="fecha2" name="fecha2">
+ <option>{{ pelicula.f2}}</option>
+ <option value="Ene">Enero</option> 
+ <option value="Feb">Febrero</option> 
+ <option value="Mar">Marzo</option> 
+ <option value="Abr">Abril</option> 
+ <option value="May">Mayo</option> 
+ <option value="Jun">Junio</option> 
+ <option value="Jul">Julio</option> 
+ <option value="Ago">Agosto</option> 
+ <option value="Sept">Septiembre</option> 
+ <option value="Oct">Octubre</option> 
+ <option value="Nov">Noviembre</option> 
+ <option value="Dic">Diciembre</option> 
+        </select><br><br>
+
+        <select class="fecha3" name="fecha3">
+            <option>{{pelicula.f3}}</option>
+             <option value="1">1</option> 
+            <option value="2">2</option> 
+            <option value="3">3</option> 
+            <option value="4">4</option> 
+            <option value="5">5</option> 
+            <option value="6">6</option> 
+            <option value="7">7</option> 
+            <option value="8">8</option> 
+            <option value="9">9</option> 
+            <option value="10">10</option> 
+            <option value="11">11</option> 
+            <option value="12">12</option> 
+            <option value="13">13</option> 
+            <option value="14">14</option> 
+            <option value="15">15</option> 
+            <option value="16">16</option> 
+            <option value="17">17</option> 
+            <option value="18">18</option> 
+            <option value="19">19</option> 
+            <option value="20">20</option> 
+            <option value="21">21</option> 
+            <option value="22">22</option> 
+            <option value="23">23</option> 
+            <option value="24">24</option> 
+            <option value="25">25</option> 
+            <option value="26">26</option> 
+            <option value="27">27</option> 
+            <option value="28">28</option> 
+            <option value="29">29</option> 
+            <option value="30">30</option> 
+            <option value="31">31</option> 
+        </select><br><br>
+        </div><br>
+    
+        <label class="label_formulario" >GENERO</label><br>
+        <select class="seleccion" name="genero">
+            <option>{{ pelicula.genero}}</option>
+            <option>ACCION</option>
+            <option>COMEDIA</option>
+            <option>SUSPENSO</option> 
+            <option>AVENTURA</option> 
+            <option>ANIMACION</option> 
+        </select><br><br>
+  
+        
+        <label class="label_formulario">REPARTO</label><br>
+        <input class="input_formulario" name="reparto" value="{{pelicula.reparto}}" onkeypress="return soloLetras(event)" required><br><br>
+        
+
+       
+        <label class="label_formulario">DIRECTOR</label><br>
+        <input class="input_formulario" name="director" value="{{pelicula.director}}" onkeypress="return soloLetras(event)" required><br><br>
+        
+        <label class="label_formulario">PUBLICO</label><br>
+        <select class="seleccion" name="publico">
+            <option>{{pelicula.publico}}</option>
+            <option>+7</option>
+            <option>+12</option>
+            <option>+18</option> 
+            <option>TODAS LAS EDADES</option> 
+           
+        </select><br><br>
+        <input class="boton_enviar" type="submit" name="actualizar" value="ACTUALIZAR">
+        <input class="boton_enviar" type="submit" name="eliminar" value="ELIMINAR">
+        
+        </div><br>
+       
+        <div class="tiquetesAdministrador">
+            <label class="label_formulario">TIQUETES</label><br><br>
+            <label class="label_formulario">CANTIDAD MAXIMIA*</label><br>
+            <input class="input_formulario" name="cantidad_tiquetes" value="{{pelicula.cantidad_tiquetes}}" onkeypress="return soloNumeros(event)" required><br><br>
+            <label class="label_formulario">PRECIO POR BOLETO*</label><br>
+        <input class="input_formulario" name="precio_tiquete" value="{{pelicula.p}}" onkeypress="return soloNumeros(event)" required><br><br>
+        </div>
+       
+       </form>
+       {%- endfor %}
+    </div>
+    <script type="text/javascript" src="../static/js/validaciones.js"></script>
+    <footer>
+        <p class="contenido_piePagina">Contenido del sitio 2022© <br>
+          Derechos Reservados Stark Cinemas® <br>
+          Desarrollado por Min Tic Grupo 4<br>
+          <a href="/contactos"> <img class="imagen_contactos" src="../static/img/contactos.png"></a> 
+
+        </p> 
+    </footer>
+    <script>
+        const $seleccionArchivos = document.querySelector("#seleccionArchivos"),
+  $imagenPrevisualizacion = document.querySelector("#imagenPrevisualizacion");
+
+// Escuchar cuando cambie
+$seleccionArchivos.addEventListener("change", () => {
+  // Los archivos seleccionados, pueden ser muchos o uno
+  const archivos = $seleccionArchivos.files;
+  // Si no hay archivos salimos de la función y quitamos la imagen
+  if (!archivos || !archivos.length) {
+    $imagenPrevisualizacion.src = "";
+    return;
+  }
+  // Ahora tomamos el primer archivo, el cual vamos a previsualizar
+  const primerArchivo = archivos[0];
+  // Lo convertimos a un objeto de tipo objectURL
+  const objectURL = URL.createObjectURL(primerArchivo);
+  // Y a la fuente de la imagen le ponemos el objectURL
+  $imagenPrevisualizacion.src = objectURL;
+});
+
+
+    </script>
+</body>
+</html>

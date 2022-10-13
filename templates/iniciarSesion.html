@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/estilos.css"></link>
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+
+    <header>
+        <div class="titulo">Iniciar Sesión</div>
+        <nav id="barra_menu">
+            <ul>
+                <li><a href="/">INICIO</a></li>
+                <li><a href="/consultar">CARTELERA</a></li>
+                <li><a href="/nosotros">NOSOTROS</a></li>
+                <li><a href="/contactos">CONTÁCTENOS</a></li>
+                <li><a href="/sesion">INICIA SESIÓN</a></li>
+                <li><a href="/registrar">REGISTRATE</a></li>
+            </ul>
+         </nav>
+         <div class="redes">
+            <a href="https://www.facebook.com/" target="_blank" ><img id="facebook" src="../static/img/facebook.png"></a>
+             <a href="https://twitter.com/" target="_blank"> <img id="twitter" src="../static/img/twitter.png"></a>
+          </div>
+    </header>
+   
+
+    <div class="bodyContactenos">
+        {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <div class=flashes>
+    {% for message in messages %}
+      {{ message }}
+    {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+       <form class="formulario_iniciar" method="post" >
+        <label class="label_formulario">USUARIO:</label><br>
+        <input class="input_formulario" name="usuario" onkeypress="return soloLetras(event)" required><br><br>
+        <label class="label_formulario">CONTRASEÑA:</label><br>
+        <input type="password" class="input_formulario" name="clave" required><br><br>
+        <label class="label_formulario" >TIPO USUARIO</label><br>
+            <select class="seleccion" name="tipo_usuario">
+                <option>USUARIO</option>
+                <option>ADMINISTRADOR</option>
+                <option>SUPERADMINISTRADOR</option>
+            </select><br><br>
+
+        <input type="submit" class="boton_enviar_sesion" name="ingresar" value="ENVIAR">
+        <div class="opciones_sesion">
+            <label class="label_sesion"><a href="/recuperacion">Recordar contraseña</a></label>
+            <label class="label_registrate"><a href="/registrar">Registrate</a></label><br>
+            <label class="label_sesion"><a href="/registrarAdministrador">Registrar  Administardor</a></label>
+        </div>
+       </form>
+
+
+
+    </div>
+
+    <footer>
+        <p class="contenido_piePagina">Contenido del sitio 2022© <br>
+          Derechos Reservados Stark Cinemas® <br>
+          Desarrollado por Min Tic Grupo 4<br>
+          <a href="/contactos"> <img class="imagen_contactos" src="../static/img/contactos.png"></a> 
+
+        </p> 
+    </footer>
+    
+</body>
+</html>

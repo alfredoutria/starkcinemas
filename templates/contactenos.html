@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/estilos.css"></link>
+    <title>Contactenos</title>
+</head>
+<body>
+
+    <header>
+        <div class="titulo">Contactenos</div>
+        <nav id="barra_menu">
+            <ul>
+                <li><a href="/">INICIO</a></li>
+                <li><a href="/consultar">CARTELERA</a></li>
+                <li><a href="/nosotros">NOSOTROS</a></li>
+                <li><a href="/contactos">CONTÁCTENOS</a></li>
+                <li><a href="/sesion">INICIA SESIÓN</a></li>
+                <li><a href="/registrar">REGISTRATE</a></li>
+            </ul>
+         </nav>
+         <input type="text" id="buscar" placeholder="Buscar">
+         <div class="redes">
+            <a href="https://www.facebook.com/" target="_blank" ><img id="facebook" src="../static/img/facebook.png"></a>
+             <a href="https://twitter.com/" target="_blank"> <img id="twitter" src="../static/img/twitter.png"></a>
+          </div>
+     
+    </header>
+   
+
+    <div class="bodyContactenos">
+        <h2>PQR</h2>
+        <p>
+            En el siguiente formulario nos puedes dejar tus comentarios o tus pqr 
+        </p>
+        <hr>
+       <form class="formulario" method="post">
+        <label class="label_formulario">NOMBRES Y APELLIDOS*</label><br>
+        <input class="input_formulario" name="nombres" onkeypress="return soloLetras(event)" required><br><br>
+        <label class="label_formulario">CEDULA*</label><br>
+        <input class="input_formulario" name="cedula" onkeypress="return soloLetras(event)" required><br><br>
+        <label class="label_formulario">CORREO ELECTRONICO*</label><br>
+        <input type="email" class="input_formulario" name="correo" required><br><br>
+        <label class="label_formulario">TELÉFONO*</label><br>
+        <input class="input_formulario" name="telefono" onkeypress="return soloNumeros(event)" required><br><br>
+        <label class="label_formulario" >MOTIVO*</label><br>
+        <textarea class="area" name="motivo"></textarea><br>
+        <input type="submit" class="boton_enviar" required name="boton_enviar_contacto" value="ENVIAR">
+       </form>
+
+    </div>
+    <script type="text/javascript" src="../static/js/validaciones.js"></script>
+    <footer>
+        <p class="contenido_piePagina">Contenido del sitio 2022© <br>
+          Derechos Reservados Stark Cinemas® <br>
+          Desarrollado por Min Tic Grupo 4<br>
+          <a href="/contactos"> <img class="imagen_contactos" src="../static/img/contactos.png"></a> 
+
+        </p> 
+    </footer>
+    
+</body>
+</html>

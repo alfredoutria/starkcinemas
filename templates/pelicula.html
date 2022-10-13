@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/estilos.css"></link>
+    <title>Pelicula</title>
+    <style>
+        .comprar{
+            width: 50%;
+            height: 20px;
+            font-size: 20px;
+            border: 1px solid black;
+            background: rgb(185, 250, 185);
+            margin: auto;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bold;
+            padding: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body onload="comparacion();">
+
+    <header>
+        <div class="titulo">Pelicula</div>
+        <nav id="barra_menu">
+            <ul>
+                <li><a href="/">INICIO</a></li>
+                <li><a href="/consultar">CARTELERA</a></li>
+                <li><a href="/nosotros">NOSOTROS</a></li>
+                <li><a href="/contactos">CONTÁCTENOS</a></li>
+                <li><a href="/sesion">INICIA SESIÓN</a></li>
+                <li><a href="/registrar">REGISTRATE</a></li>
+            </ul>
+         </nav>
+         <div class="redes">
+            <a href="https://www.facebook.com/" target="_blank" ><img id="facebook" src="../static/img/facebook.png"></a>
+             <a href="https://twitter.com/" target="_blank" style="margin-right:100px;" > <img id="twitter" src="../static/img/twitter.png"></a>
+          </div>
+
+         <div class="sesion">
+            <label  style="color: black; font-size:15px; text-transform: uppercase; font-weight: bold;" >{{usuario}}</label><br>
+            <a href="/"><label style="font-size: 20px; color: black;cursor: pointer; width: 200px; text-decoration: none; margin-top: -10px;">{{cerrarSesion}}</label></a>
+         </div>
+     
+    </header>
+    {%- for pelicula in peliculas %}
+
+    <div class="bodyAdministrador">
+        <div class="comprar" id="comprar">!Gracias por su compra</div>
+        <br><br>
+    
+   
+       <div class="formularioComprar">
+        <div class="div_img">
+            <img id="imagenPrevisualizacionComprar" src="../static/imagenes/{{pelicula.nombre_imagen}}">
+           
+        </div><br>
+        <div class="div_pelicula">
+        <label class="label_formulario">TITULO:</label><br>
+        <label class="input_pelicula">{{pelicula.titulo}}</label><br>
+        <hr>
+       
+
+        <label class="label_formulario">DESCRIPCIÓN:</label><br>
+        <label class="input_pelicula">{{pelicula.descripcion}}</label><br>
+         <hr>
+        
+   
+            <label class="label_formulario">FECHA:</label><br>
+            <label class="input_pelicula">{{pelicula.fecha}}</label><br><br>
+
+
+        <label class="label_formulario">GENERO:</label><br>
+        <label class="input_pelicula">{{pelicula.genero}}</label><br><br>
+
+
+        <label class="label_formulario">REPARTO:</label><br>
+        <label class="input_pelicula">{{pelicula.reparto}}</label><br><br>
+
+
+
+        <label class="label_formulario">DIRECTOR:</label><br>
+        <label class="input_pelicula">{{pelicula.director}}</label><br><br>
+
+
+        <label class="label_formulario">PUBLICO:</label><br>
+        <label class="input_pelicula">{{pelicula.publico}}</label><br><br>
+
+        </div><br>
+       
+        <div class="comprar_pelicula">
+            <label class="label_precio">PRECIO:</label>
+            <label class="input_precio"  >{{pelicula.precio_tiquete}}</label><br><br>
+            <button class="boton_comprar"  onclick="comprar()">COMPRAR</button>
+        </div>
+    </div>
+
+    <div>
+       
+        <h2>AGREGAR COMENTARIOS</h2>
+        <hr><br>
+        <div class="div" >
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+              <div class=flashes2>
+              {% for message in messages %}
+                {{ message }}
+              {% endfor %}
+              </div>
+            {% endif %}
+          {% endwith %}
+    <form method="post">
+            <input type="text" name="id" style="visibility: hidden;" readonly  value="{{pelicula.id}}"><br>
+            <input type="text" name="usuario" style="visibility:hidden;" readonly value="{{usuario}}"><br>
+            <input type="text" name="pelicula" style="visibility: hidden;" readonly value="{{pelicula.titulo}}"><br>
+            <label style="font-size: 25px; ">Puntuación</label>
+            <select name="puntuacion" style="font-size: 17px;">
+                <option value="">Dejanos tu Puntuación</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div><br>
+        <textarea class="area3"  name="comentario" placeholder="ESCRIBE TU COMENTARIO" required ></textarea><br>
+    </div>
+    <input class="boton_enviar" type="submit" name="boton_comentarios" value="ENVIAR">
+    {%- endfor %}
+</form>
+
+    <hr>
+    <h2>COMENTARIOS ANTERIORES</h2>
+    <h3>Si quieres eliminar algún comentario debes escribirnos en la sesión de "CONTÁCTENOS"</h3>
+    {%- for comentario in comentarios %}
+    <hr>
+
+
+    <form method="post">
+    
+     
+    <table></table>
+    <label class="label_formulario">Usuario:</label>
+      <label>{{comentario.usuario}}</label><br>
+    <label class="label_formulario">Pelicula:</label>
+      <label>{{comentario.pelicula}}</label><br>
+    <label class="label_formulario">Comentarios:</label>
+        <p>
+            {{comentario.comentario}}
+        </p>
+       
+        {%- endfor %}
+        </form>
+        <hr>
+    </div>
+
+
+    <footer>
+        <p class="contenido_piePagina">Contenido del sitio 2022© <br>
+          Derechos Reservados Stark Cinemas® <br>
+          Desarrollado por Min Tic Grupo 4<br>
+          <a href="/contactos"> <img class="imagen_contactos" src="../static/img/contactos.png"></a> 
+
+        </p> 
+    </footer>
+    <script>
+        const $seleccionArchivos = document.querySelector("#seleccionArchivos"),
+  $imagenPrevisualizacion = document.querySelector("#imagenPrevisualizacionComprar");
+
+// Escuchar cuando cambie
+$seleccionArchivos.addEventListener("change", () => {
+  // Los archivos seleccionados, pueden ser muchos o uno
+  const archivos = $seleccionArchivos.files;
+  // Si no hay archivos salimos de la función y quitamos la imagen
+  if (!archivos || !archivos.length) {
+    $imagenPrevisualizacion.src = "";
+    return;
+  }
+  // Ahora tomamos el primer archivo, el cual vamos a previsualizar
+  const primerArchivo = archivos[0];
+  // Lo convertimos a un objeto de tipo objectURL
+  const objectURL = URL.createObjectURL(primerArchivo);
+  // Y a la fuente de la imagen le ponemos el objectURL
+  $imagenPrevisualizacion.src = objectURL;
+});
+
+   function comprar(){
+    document.getElementById('comprar').style.display = 'block';
+   }
+
+ function comparacion(){
+ var usuario1 =  document.getElementById('usuario1').value;
+ var usuario2 = document.getElementById('usuario2').value;
+ boton = document.getElementById('boton_eliminar_co');
+
+ console.log("usuario1",usuario1);
+ console-log("usuario", usuario2);
+
+  if(usuario1 == usuario2){
+        boton.style.display == 'block';
+  }
+
+
+ }
+
+
+    </script>
+</body>
+</html>

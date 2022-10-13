@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/estilos.css"></link>
+    <title>crud administardor</title>
+</head>
+<body>
+
+    <header>
+        <div class="titulo">Crud de Administracion</div>
+        <nav id="barra_menu">
+            <ul>
+                <li><a href="/">INICIO</a></li>
+                <li><a href="/consultar">CARTELERA</a></li>
+                <li><a href="/nosotros">NOSOTROS</a></li>
+                <li><a href="/contactos">CONTÁCTENOS</a></li>
+                <li><a href="/sesion">INICIA SESIÓN</a></li>
+                <li><a href="/registrar">REGISTRATE</a></li>
+                <li><a href="/panel_admin">ADMIN</a></li>
+            </ul>
+         </nav>
+         <div class="redes">
+          <a href="https://www.facebook.com/" target="_blank" ><img id="facebook" src="../static/img/facebook.png"></a>
+           <a href="https://twitter.com/" target="_blank"> <img id="twitter" src="../static/img/twitter.png"></a>
+        </div>
+     
+    </header>
+   
+
+    <div class="contenidoBody">
+        <h2>Base de datos Peliculas</h2>
+        <hr>
+        <form action="" method='post' novalidate>
+            <input type="text" id="texto" name="texto" placeholder="Buscar">
+           <input type="submit" id="consultar" name="consultar" value="Consultar">
+            <table class="tabla">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Genero</th>
+                    <th scope="col">Publico</th>
+                    <th scope="col">Agregar</th>
+                    <th scope="col">Editar/Eliminar</th>
+                  </tr>
+                </thead>
+                {%- for pelicula in peliculas %}
+                <tbody>
+                  <tr>
+                    <td>{{pelicula.id}}</td>
+                    <td>{{pelicula.titulo}}</td>
+                    <td>{{pelicula.genero}}</td>
+                    <td>{{pelicula.publico}}</td>
+                    <td><button class="boton"><a href="/agregar">Agregar</a></button></td>
+                    <td><button class="boton"><a href="{{url_for('editar_eliminar',id=pelicula.id,nombre_imagen=pelicula.nombre_imagen)}}" name="editar_eliminar">Editar/Eliminar</a></button></td>
+                  </tr>
+                </tbody>
+                {%- endfor %}
+              </table>
+            </form>
+        
+       
+    </div>
+
+    <footer>
+        <p class="contenido_piePagina">Contenido del sitio 2022© <br>
+          Derechos Reservados Stark Cinemas® <br>
+          Desarrollado por Min Tic Grupo 4<br>
+          <a href="/contactos"> <img class="imagen_contactos" src="../static/img/contactos.png"></a> 
+
+        </p> 
+    </footer>
+    
+</body>
+</html>
