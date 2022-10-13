@@ -1,5 +1,4 @@
 from email.mime import image
-from msilib.schema import Error
 import sqlite3
 from sqlite3 import DataError
 from flask import  Flask, render_template, request, jsonify,current_app
