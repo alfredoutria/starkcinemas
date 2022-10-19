@@ -21,6 +21,10 @@ a{
     margin-bottom: 120px;
 }
 
+.contenido_movil{
+  display: none;
+}
+
 .pelicula{
    
    margin-top: 40px;
@@ -660,3 +664,16 @@ footer {
 }
 
 
+@media screen and (max-width: 500px){
+
+.contenido_principal{
+    display: none;
+}
+
+.contenido_movil{
+
+    display: block;
+
+ }
+
+}
