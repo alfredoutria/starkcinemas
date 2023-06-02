@@ -25,7 +25,7 @@
 </head>
 <body onload="comparacion();">
 
-   <header>
+   <header class="headerpeliculaEscritorio">
       <div class="menu"><img src="../static/img/menu.png" width="40px;"></div>
       <div class="titulo">Stark Cinemas</div>
       <div class="sesion_movil">
@@ -57,6 +57,39 @@
      </div>
    
   </header>
+
+  <header class="headerpeliculaMovil">
+    <div class="menu"><img src="../static/img/menu.png" width="40px;"></div>
+    <div class="titulo">Stark Cinemas</div>
+    <div class="sesion_movil">
+      <label class="usuarioMovil" >{{usuario}}</label><br>
+      <a href="/"><label class="cerrarMovil" >{{cerrarSesion}}</label></a>
+   </div>
+    <nav id="barra_menu" class="div_nav">
+    
+      <div class="ulMovil" style="margin-top: -80px;">
+        <div class="menu"><img class="imagenCerrar" src="../static/img/botonCerrar.png" ></div>
+        <ul class='ulM'>
+            <li class='ulLi'><a href="/">INICIO</a></li>
+            <li class='ulLi'><a href="/consultar">CARTELERA</a></li>
+            <li class='ulLi'><a href="/nosotros">NOSOTROS</a></li>
+            <li class='ulLi'><a href="/contactos">CONTÁCTENOS</a></li>
+            <li class='ulLi'><a href="/sesion">INICIA SESIÓN</a></li>
+            <li class='ulLi'><a href="/registrar">REGISTRATE</a></li>
+        </ul>
+      </div>
+     </nav>
+     <div class="redes">
+       <a href="https://www.facebook.com/" target="_blank" ><img id="facebook" src="../static/img/facebook.png"></a>
+        <a href="https://twitter.com/" target="_blank"> <img id="twitter" src="../static/img/twitter.png"></a>
+     </div>
+
+     <div class="sesion">
+      <label class="usuario" >{{usuario}}</label><br>
+      <a href="/"><label class="cerrar">{{cerrarSesion}}</label></a>
+   </div>
+ 
+</header>
 
     {%- for pelicula in peliculas %}
 

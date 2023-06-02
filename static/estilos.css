@@ -50,6 +50,13 @@ a {
 
 }
 
+.headerpeliculaEscritorio{
+    display: block;
+}
+
+.headerpeliculaMovil{
+    display: none;
+}
 
 
 .contenidoPrincipal {
@@ -922,6 +929,13 @@ footer {
     }
 
 
+    .headerpeliculaEscritorio{
+        display: none;
+    }
+
+    .headerpeliculaMovil{
+        display: block;
+    }
 
     header {
         background: rgb(24, 74, 131);
