@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/estilos.css"></link>
+    <title>Crud Contactos</title>
+</head>
+<body>
+  <div class="EscritorioPaginasWeb">
+  <header>
+    <div class="menu"><img src="../static/img/menu.png" width="40px;"></div>
+    <nav id="barra_menu">
+    
+      <div class="ulMovil">
+        <div class="menu"><img class="imagenCerrar" src="../static/img/botonCerrar.png" ></div>
+        <ul class='ulM'>
+            <li><a href="/">INICIO</a></li>
+            <li><a href="/consultar">CARTELERA</a></li>
+            <li><a href="/nosotros">NOSOTROS</a></li>
+            <li><a href="/contactos">CONTÁCTENOS</a></li>
+            <li><a href="/sesion">INICIA SESIÓN</a></li>
+            <li><a href="/registrar">REGISTRATE</a></li>
+            <li><a href="/panel_admin">ADMIN</a></li>
+        </ul>
+      </div>
+     </nav>
+</header>
+    <div class="contenidoBody">
+        <h2>Usuarios para Contactar</h2>
+        <hr>
+        <form action="" method='post' novalidate>
+            <input type="text" id="texto" name="texto" placeholder="Buscar">
+           <input type="submit" id="consultar" name="consultar" value="Consultar">
+            <table class="tabla">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombres</th>
+                    <th scope="col">Cedula</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Eliminar</th>
+                  </tr>
+                </thead>
+                {%- for usuario in usuarios %}
+                <tbody>
+                  <tr>
+                    <td>{{usuario.id}}</td>
+                    <td>{{usuario.nombres}}</td>
+                    <td>{{usuario.cedula}}</td>
+                    <td>{{usuario.correo}}</td>
+                    <td>{{usuario.telefono}}</td>
+                    <td><button class="boton"><a href="{{url_for('contactos_editar_eliminar',id=usuario.id)}}" name="contacto_editar_eliminar">Eliminar</a></button></td>
+                  </tr>
+                </tbody>
+                {%- endfor %}
+              </table>
+            </form>
+        
+       
+    </div>
+
+    <footer>
+        <p class="contenido_piePagina">Contenido del sitio 2022© <br>
+          Derechos Reservados Stark Cinemas® <br>
+          Desarrollado por Min Tic Grupo 4<br>
+        </p> 
+    </footer>
+    </div>
+    <div class="MovilPaginasWeb" >
+      No disponible para dispositivos moviles, para visualizar debes ingresar desde un computador
+    </div>
+</body>
+</html>

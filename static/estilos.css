@@ -1,0 +1,1426 @@
+html {
+    min-height: 100%;
+    position: relative;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+body {
+    margin: 0;
+}
+
+.EscritorioPaginasWeb {
+    display: block;
+}
+
+.MovilIndex {
+    display: none;
+}
+
+.MovilPaginasWeb {
+    display: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+.sesion_movil {
+    display: none;
+}
+
+
+.EscritorioIndex {
+    display: block;
+}
+
+.headerPrincipal {
+
+    margin-top: -50px;
+    padding-left: 0px;
+    font-size: 0;
+    background: rgb(37, 100, 172);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+    -webkit-box-shadow: 0px 7px 33px -7px rgba(255, 255, 255, 0.89);
+    -moz-box-shadow: 0px 7px 33px -7px rgba(255, 255, 255, 0.89);
+    box-shadow: 0px 7px 33px -7pxrgba(255, 255, 255, 0.89);
+
+}
+
+
+
+.contenidoPrincipal {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 120px;
+}
+
+.tituloPrincipal {
+    margin-top: 10px;
+    margin-left: 100px;
+    position: fixed;
+    width: 200px;
+    height: 43px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 28px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    overflow: hidden;
+    -webkit-box-shadow: 1px 0px 10px 0px rgba(235, 218, 235, 1);
+    -moz-box-shadow: 1px 0px 10px 0px rgba(235, 218, 235, 1);
+    box-shadow: 1px 0px 10px 0px rgba(235, 218, 235, 1);
+}
+
+.tituloIndex {
+    width: 400px;
+    height: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0px auto;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ulLiIndex{
+    overflow: hidden;
+    padding: 8px 8px;
+    height: 35px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.col {
+    margin-top: 50px;
+}
+
+.ulLi {
+    overflow: hidden;
+    padding: 8px 8px;
+    height: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.ulLi a {
+    margin-top: -10px;
+}
+
+.contenidoBody {
+    margin: 0px auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    width: 1200px;
+    height: 500px;
+    display: table;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.contenidoNosotros {
+    margin: 0px auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    width: 1200px;
+    height: 500px;
+    display: table;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.div_formulario_escritorio {
+    display: block;
+}
+
+.div_formulario_movil {
+    display: none;
+}
+
+.contenido_movil {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+.pelicula {
+
+    margin-top: 40px;
+    margin-left: 70px;
+    overflow: hidden;
+    list-style: none;
+    float: left;
+    display: block;
+    border-radius: 20px;
+    background: rgb(9, 25, 114);
+    color: white;
+    width: 300px;
+    height: auto;
+    z-index: 1;
+}
+
+.imagen_pelicula {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+
+
+}
+
+section {
+    margin-left: 55px;
+}
+
+
+
+.datoPelicula1 {
+
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.datoPelicula2 {
+    font-size: 20px;
+}
+
+header {
+    margin-top: -80px;
+    padding-left: 0px;
+    font-size: 0;
+    background: rgb(37, 100, 172);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+    -webkit-box-shadow: 0px 7px 33px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 7px 33px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 7px 33px -7px rgba(0, 0, 0, 0.75);
+
+
+}
+
+
+.titulo {
+    margin-top: 10px;
+    margin-left: 100px;
+    position: fixed;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 30px;
+    color: white;
+    -webkit-box-shadow: 1px 0px 10px 0px rgba(235, 218, 235, 1);
+    -moz-box-shadow: 1px 0px 10px 0px rgba(235, 218, 235, 1);
+    box-shadow: 1px 0px 10px 0px rgba(235, 218, 235, 1);
+
+}
+
+
+
+
+nav {
+    float: right;
+    margin-top: 10px;
+    margin-right: 90px;
+
+
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 130px;
+    height: 20px;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+
+
+nav li:hover {
+    background-color: white;
+    border-radius: 10px;
+    color: #4c05f1;
+
+}
+
+nav li>ul {
+    display: none;
+}
+
+nav li:hover>ul {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+
+
+
+#buscar {
+    float: right;
+    margin-top: -40px;
+    margin-right: 220px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.redes {
+    margin-top: -45px;
+    margin-right: 120px;
+    float: right;
+}
+
+#facebook {
+    width: 35px;
+}
+
+#twitter {
+    width: 35px;
+    margin-left: 10px;
+}
+
+.div_nosotros {
+
+    margin-left: 250px;
+
+}
+
+.parrafo_nosotros {
+    width: 700px;
+    font-size: 20px;
+
+}
+
+.div_terminos {
+    width: 70%;
+    margin: 0px auto;
+}
+
+.h1_terminos {
+    text-align: center;
+}
+
+.parrafo_terminos {
+    font-size: 15px;
+}
+
+.bodyContactenos {
+    margin: 0px auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    width: auto;
+    height: 500px;
+    display: table;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.bodyInicioSesion {
+    margin: 0px auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    width: auto;
+    height: 500px;
+    display: table;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+
+.div_formulario_documento {
+    float: right;
+    margin-left: 150px;
+    margin-top: -60px;
+}
+
+.label_formulario {
+    font-weight: bold;
+}
+
+.seleccion {
+    height: 30px;
+}
+
+.input_formulario {
+    width: 300px;
+    height: 20px;
+    font-size: 15px;
+
+}
+
+.area {
+    width: 500px;
+    height: 100px;
+    text-align: center;
+}
+
+.boton_enviar {
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+    background: blue;
+    color: white;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+
+.formulario_iniciar {
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 20px;
+    -webkit-box-shadow: -1px 1px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.boton_enviar_sesion {
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #4899E1;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 80px;
+    height: 30px;
+    background: #4899E1;
+    color: white;
+
+}
+
+.opciones_sesion {
+
+    text-align: center;
+    margin-top: 50px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background: rgb(46, 49, 50);
+    background: linear-gradient(85deg, rgba(46, 49, 50, 1) 0%, rgba(56, 147, 219, 1) 69%);
+    color: white;
+    font-size: 17px;
+
+}
+
+.label_sesion {
+    font-weight: bold;
+
+}
+
+.label_registrate {
+    font-weight: bold;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.div_genero {
+    float: right;
+    margin-right: 200px;
+    margin-top: -60px;
+}
+
+.div_fecha {
+    display: flex;
+}
+
+.fecha1 {
+    font-size: 17px;
+}
+
+.fecha2 {
+    margin-left: 30px;
+    font-size: 17px;
+
+}
+
+.fecha3 {
+    margin-left: 30px;
+    font-size: 17px;
+}
+
+.terminos {
+    color: blue;
+}
+
+
+.bodyAdministrador {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    width: auto;
+    height: auto;
+    margin-left: 150px;
+    justify-content: center;
+    margin-bottom: 120px;
+
+
+}
+
+.h2_Administrador {
+    text-align: center;
+    font-weight: bold;
+}
+
+.formularioAdminstrador {
+    margin-left: 50px;
+    border: 1px solid black;
+    overflow: hidden;
+    display: table;
+    height: 700px;
+    background: rgb(125, 134, 136);
+    background: linear-gradient(85deg, rgba(125, 134, 136, 1) 0%, rgba(91, 96, 242, 1) 21%);
+
+}
+
+.div_img {
+    margin-right: 330px;
+}
+
+.formularioComprar {
+    padding: 40px;
+}
+
+.div_datos {
+    margin-top: -300px;
+    width: 300px;
+    height: auto;
+    margin-left: 300px;
+    margin-bottom: auto;
+}
+
+.div_datosAdministrador {
+    margin-top: -350px;
+    width: 300px;
+    height: auto;
+    margin-left: 300px;
+    margin-bottom: auto;
+}
+
+#imagenPrevisualizacion {
+    width: 250px;
+    height: 300px;
+    border: 1px solid white;
+    background: white;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 10px;
+
+}
+
+#seleccionArchivos {
+    margin-top: 10px;
+
+}
+
+.tiquetes {
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    margin-left: 650px;
+    margin-top: -400px;
+    background: #90D7C9;
+    padding: 5px;
+
+}
+
+.tiquetesAdministrador {
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    margin-left: 650px;
+    margin-top: -500px;
+    background: #90D7C9;
+    padding: 5px;
+
+}
+
+.area2 {
+    width: 300px;
+    font-size: 15px;
+}
+
+.input_buscar {
+    width: 200px;
+    height: 20px;
+    margin-left: 50px;
+}
+
+.formularioComprar {
+    margin-top: -50px;
+    margin-left: 50px;
+    overflow: hidden;
+    display: table;
+    height: 400px;
+
+}
+
+#imagenPrevisualizacionComprar {
+    width: 250px;
+    height: 300px;
+    border: 5px solid gray;
+    background: white;
+    display: flex;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.comprar_pelicula {
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left: 650px;
+    margin-top: -300px;
+    background: rgb(194, 208, 232);
+    background: linear-gradient(85deg, rgba(194, 208, 232, 1) 0%, rgba(215, 211, 197, 1) 100%);
+    padding: 5px;
+
+}
+
+.label_precio {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input_precio {
+    font-size: 20px;
+}
+
+.boton_comprar {
+    background: #1679cf;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 50px;
+    cursor: pointer;
+
+}
+
+
+.label_puntuacion {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.puntuacion {
+    font-size: 15px;
+}
+
+.div_estrellas_blanca {
+    margin-top: 20px;
+    margin-left: 50px;
+
+
+}
+
+
+.div_estrellas_blanca_pelicula {
+    margin-top: -30px;
+    margin-left: 100px;
+}
+
+.area3 {
+    width: 400px;
+    height: 150px;
+    font-size: 15px;
+}
+
+.tabla {
+    border: 1px solid gray;
+    margin-top: 10px;
+    font-size: 20px;
+    width: 100%;
+}
+
+th {
+    background-color: rgb(148, 245, 224);
+}
+
+th,
+td {
+    width: 25%;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-spacing: 0;
+}
+
+#texto {
+    font-size: 20px;
+}
+
+#consultar {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background: #2676bb;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.boton {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    background: #2676bb;
+    padding: 0px;
+    border: none;
+}
+
+
+.panel {
+    width: 800px;
+    overflow: hidden;
+    margin: auto;
+
+
+}
+
+
+
+.panel_gestionar {
+    width: 230px;
+    height: 230px;
+    font-size: 30px;
+    display: flex;
+    margin-left: 30px;
+    border: 1px solid black;
+    float: left;
+    border-radius: 50%;
+    ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+#g1 {
+    background: rgb(5, 143, 252);
+    background: linear-gradient(85deg, rgba(5, 143, 252, 1) 0%, rgba(233, 215, 156, 1) 78%);
+}
+
+#g2 {
+    background: rgb(63, 209, 166);
+    background: linear-gradient(85deg, rgba(63, 209, 166, 1) 0%, rgba(168, 149, 83, 1) 100%);
+
+}
+
+#g3 {
+    background: rgb(232, 216, 194);
+    background: linear-gradient(85deg, rgba(232, 216, 194, 1) 0%, rgba(181, 141, 0, 1) 100%);
+
+}
+
+#g4 {
+    background: rgb(194, 208, 232);
+    background: linear-gradient(85deg, rgba(194, 208, 232, 1) 0%, rgba(189, 182, 160, 1) 100%);
+    margin-top: 20px;
+    margin-left: 150px;
+
+}
+
+#g5 {
+    background: rgb(165, 108, 179);
+    background: linear-gradient(85deg, rgba(165, 108, 179, 1) 0%, rgba(189, 182, 160, 1) 87%);
+    margin-top: 20px;
+
+}
+
+
+.flashes {
+    width: 100%;
+    background: rgb(201, 135, 135);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.flashes2 {
+    width: 450px;
+    height: 30px;
+    background: rgb(150, 103, 1);
+    font-size: 19px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.div_pelicula {
+    margin-top: -330px;
+    width: 300px;
+    height: auto;
+    margin-left: 300px;
+    margin-bottom: auto;
+
+}
+
+
+.input_pelicula {
+
+    text-transform: uppercase;
+
+}
+
+
+.redes-sesion {
+    float: right;
+    margin-right: 250px;
+    margin-top: -40px;
+    text-align: center;
+    width: 200px;
+}
+
+.sesion {
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 85%;
+    width: 200px;
+    height: 50px;
+    display: block;
+}
+
+.usuario {
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cerrar {
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+
+footer {
+    background: rgb(24, 74, 131);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    color: white;
+    font-weight: bold;
+    -webkit-box-shadow: 0px -4px 37px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -4px 37px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -4px 37px -7px rgba(0, 0, 0, 0.75);
+}
+
+.imagen_contactos {
+    width: 250px;
+    float: right;
+    margin-top: -60px;
+    margin-right: 50px;
+}
+
+.contenido_piePagina {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .EscritorioIndex {
+        display: none;
+    }
+
+    .tituloMovilIndex{
+        font-size: 25px;
+        margin-top: -37px;
+        width: 60%;
+        height: 40px;
+        margin-left: 60px;
+        background: transparent;
+        border: 1px solid white;
+        border-radius: 10px;
+        font-size: 23px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        color:white;
+        -webkit-box-shadow: 1px 0px 10px 0px rgba(235, 218, 235, 1);
+        -moz-box-shadow: 1px 0px 10px 0px rgba(235, 218, 235, 1);
+        box-shadow: 1px 0px 10px 0px rgba(235, 218, 235, 1);
+    }
+
+    .MovilIndex {
+        display: block;
+        margin: 0px auto;
+        margin-top: 80px;
+        margin-bottom: 40px;
+        width: 100%;
+        height: 500px;
+        display: table;
+        justify-content: center;
+        margin-bottom: 120px;
+       
+    }
+
+    .ulLiMovilIndex{
+        display: block;
+        float: none;
+        width: 100%;
+        height: 40px;
+        font-size: 18px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        background: transparent;
+        margin-left: -10px;
+        overflow: hidden;
+    }
+
+    .ulLiMovilIndex:hover {
+        background-color: transparent;
+        border: none;
+        color:white
+    }
+
+    .ulLiMovilIndex a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+
+
+    header {
+        background: rgb(24, 74, 131);
+        height: 57px;
+    }
+
+    .titulo {
+        font-size: 25px;
+        margin-top: -35px;
+        width: 60%;
+        height: 30px;
+        margin-left: 50px;
+        background: transparent;
+        border: 1px solid white;
+        border-radius: 10px;
+        font-size: 25px;
+        -webkit-box-shadow: 1px 0px 10px 0px rgba(235, 218, 235, 1);
+        -moz-box-shadow: 1px 0px 10px 0px rgba(235, 218, 235, 1);
+        box-shadow: 1px 0px 10px 0px rgba(235, 218, 235, 1);
+
+    }
+
+    .menu {
+        display: block;
+        margin-top: 5px;
+        width: 50px;
+
+
+    }
+
+    .imagenCerrar {
+        width: 30px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .redes {
+        display: none;
+    }
+
+    .ulMovil {
+        display: inline;
+        left: -100%;
+        float: left;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 2;
+        margin-top: -55px;
+        background: rgb(24, 74, 131);
+
+
+
+    }
+
+    .ulM {
+        margin: 0px auto;
+        padding-top: 10px;
+        margin-top: 50px;
+        margin-left: 10px;
+        text-align: center;
+        width: 80%;
+        height: 100%;
+        text-align: center;
+        position: absolute;
+        overflow: hidden;
+        background: rgb(24, 74, 131);
+
+
+
+    }
+
+    .ulLi {
+        display: block;
+        float: none;
+        width: 100%;
+        height: 20px;
+        font-size: 18px;
+        text-align: center;
+        background: transparent;
+        margin-left: -50px;
+        border: none;
+    }
+
+    .ulLi a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .ulLi:hover {
+        background-color: transparent;
+        border: none;
+    }
+
+
+    .contenidoBody {
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .pelicula {
+        width: 80%;
+        margin-left: 35px;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+
+    .imagen_pelicula {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 300px black;
+        margin: 0px;
+
+    }
+
+    .seccion {
+        text-align: center;
+        margin: 0px auto;
+        width: 100%;
+    }
+
+    .imagen_contactos {
+        display: none;
+    }
+
+
+    .contenidoBody {
+        width: 100%;
+        height: auto;
+        display: block;
+        justify-content: center;
+        margin-bottom: 120px;
+        overflow: hidden;
+    }
+
+    .contenidoNosotros {
+        width: 90%;
+        height: auto;
+        display: block;
+        justify-content: center;
+        margin-bottom: 120px;
+        overflow: hidden;
+        font-family: 'Courier New', Courier, monospaces;
+
+    }
+
+    .div_nosotros {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .div_nosotros .h1 {
+        text-align: center;
+    }
+
+    .parrafo_nosotros {
+        width: 100%;
+
+    }
+
+    .div_terminos {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .h1_terminos {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .parrafo_terminos {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .bodyContactenos {
+        width: 90%;
+        margin-top: 80px;
+        margin-left: 10px;
+        margin-bottom: 40px;
+        height: auto;
+        display: block;
+        margin-bottom: 120px;
+        overflow: hidden;
+    }
+
+    .bodyInicioSesion {
+        margin: 0px auto;
+        margin-top: 80px;
+        width: auto;
+        height: 500px;
+        display: table;
+        justify-content: center;
+        margin-bottom: 90px;
+
+    }
+
+    .formulario {
+        width: 90%;
+    }
+
+    .contacto_p {
+        width: 100%;
+    }
+
+    .input_formulario {
+        width: 100%;
+    }
+
+    .area {
+        width: 100%;
+    }
+
+    .flashes {
+        width: 90%;
+    }
+
+    .formulario_iniciar {
+
+        margin-top: 20px;
+        padding: 40px;
+        border-radius: 20px;
+        -webkit-box-shadow: -1px 1px 15px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 1px 15px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -1px 1px 15px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .div_formulario_escritorio {
+        display: none;
+    }
+
+    .div_formulario_movil {
+        display: block;
+    }
+
+    .div_fecha {
+        width: 100%;
+
+    }
+
+    .fecha1 {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .fecha2 {
+        width: 100%;
+        margin-left: 10px;
+        font-size: 17px;
+
+    }
+
+    .fecha3 {
+        width: 100%;
+        margin-left: 10px;
+        font-size: 17px;
+    }
+
+    .sesion {
+        display: none;
+    }
+
+
+    .sesion_movil {
+        display: block;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        color: white;
+        text-align: center;
+        background: rgb(24, 74, 131);
+        -webkit-box-shadow: -3px 6px 22px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -3px 6px 22px -6px rgba(0, 0, 0, 0.75);
+        box-shadow: -3px 6px 22px -6px rgba(0, 0, 0, 0.75);
+    }
+
+    .usuarioMovil {
+
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .cerrarMovil {
+        font-size: 20px;
+        cursor: pointer;
+        width: 200px;
+        text-decoration: none;
+        margin-top: -10px;
+    }
+
+
+    .bodyAdministrador {
+        margin: 0px auto;
+        margin-top: 80px;
+        margin-bottom: 40px;
+        width: 100%;
+        height: auto;
+        margin-left: none;
+        display: block;
+        justify-content: center;
+        margin-bottom: 120px;
+        overflow: hidden;
+
+
+    }
+
+    .h2_Administrador {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .formularioAdminstrador {
+        margin-left: 50px;
+        border: 1px solid black;
+        overflow: hidden;
+        display: table;
+        height: 700px;
+        background: rgb(125, 134, 136);
+        background: linear-gradient(85deg, rgba(125, 134, 136, 1) 0%, rgba(91, 96, 242, 1) 21%);
+
+    }
+
+    .div_img {
+        margin-top: -50px;
+        margin-right: 0px;
+        margin-left: -50px;
+    }
+
+    .formularioComprar {
+        margin: 0px;
+        width: 80%;
+        height: 650px;
+        margin-bottom: 100px;
+        font-size: 15px;
+
+    }
+
+    .div_datos {
+        margin-top: -300px;
+        width: 300px;
+        height: auto;
+        margin-left: 300px;
+        margin-bottom: auto;
+    }
+
+    .div_datosAdministrador {
+        margin-top: -350px;
+        width: 300px;
+        height: auto;
+        margin-left: 30px;
+        margin-bottom: auto;
+    }
+
+    #imagenPrevisualizacion {
+        width: 100%;
+        height: 300px;
+        border: 1px solid white;
+        background: white;
+        display: block;
+        margin: 0px auto;
+        margin-top: 50px;
+        margin-left: 10px;
+
+    }
+
+    .div_pelicula {
+        margin-top: 0px;
+        width: 100%;
+        height: 100px;
+        margin-left: -30px;
+        margin-bottom: auto;
+
+    }
+
+    .formularioComentarios {
+        font-size: 15px;
+    }
+
+    .label_puntuacion {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .puntuacion {
+        font-size: 15px;
+    }
+
+    .h2_comentariosPeliculas {
+        font-size: 15px;
+    }
+
+    .formulario_comentarios {
+        font-size: 15px;
+
+    }
+
+    .input_pelicula {
+
+        text-transform: uppercase;
+
+    }
+
+
+    .comprar_pelicula {
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 20px;
+        margin-left: -20px;
+        margin-top: 250px;
+        background: rgb(194, 208, 232);
+        background: linear-gradient(85deg, rgba(194, 208, 232, 1) 0%, rgba(215, 211, 197, 1) 100%);
+        padding: 5px;
+
+
+    }
+
+    .divComentariosPeliculas {
+        width: 100%;
+    }
+
+    .flashes2 {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .h2_comentarriosAnteriores {
+        font-size: 15px;
+    }
+
+    .h3_comentarriosAnteriores {
+        font-size: 15px;
+    }
+
+    .label_precio {
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .input_precio {
+        font-size: 20px;
+    }
+
+    .boton_comprar {
+        background: #1679cf;
+        color: white;
+        border: none;
+        width: 100px;
+        height: 30px;
+        border-radius: 20px;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+
+    .area3 {
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .div_nav {
+        margin-top: -10px;
+    }
+
+    .h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+
+    }
+
+    .parrafo_nosotros {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+
+    }
+
+
+    footer {
+        height: auto;
+        background: rgb(24, 74, 131);
+        color: white;
+        width: 100%;
+    }
+
+
+    .EscritorioPaginasWeb {
+        display: none;
+    }
+
+    .MovilPaginasWeb {
+        display: block;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+
+
+}
