@@ -1464,7 +1464,5 @@ footer {
 @media (orientation: landscape) {
     body {
       overflow: hidden;
-      transform: rotate(90deg);
-      transform-origin: center center;
     }
   }
