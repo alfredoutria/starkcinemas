@@ -867,7 +867,7 @@ footer {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
 
     .EscritorioIndex {
         display: none;
@@ -1461,9 +1461,3 @@ footer {
 
 }
 
-@media (orientation: landscape) {
-    body {
-      overflow-y: scroll;
-    }
-  }
-  
