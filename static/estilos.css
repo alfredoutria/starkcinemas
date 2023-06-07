@@ -1463,6 +1463,7 @@ footer {
 
 @media (orientation: landscape) {
     body {
-      overflow: hidden;
+      overflow-y: scroll;
     }
   }
+  
